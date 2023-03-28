@@ -22,7 +22,6 @@ public class App {
         var parser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
         
-
         //exibir e manipular os dados na aplicação
         for (Map<String,String> filme : listaDeFilmes) {
             System.out.println(filme.get("title"));
